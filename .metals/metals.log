@@ -542,3 +542,180 @@ Apr 22, 2025 9:17:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 5525
 Apr 22, 2025 9:23:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 5830
+2025.04.22 22:37:06 INFO  Shut down connection with build server.[0m
+2025.04.22 22:37:06 INFO  Shut down connection with build server.[0m
+2025.04.22 22:37:06 INFO  Shut down connection with build server.[0m
+Apr 22, 2025 10:37:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+WARNING: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Broken pipe
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:135)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:191)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:160)
+	at scala.meta.internal.metals.utils.FutureWithTimeout$$anon$1.$anonfun$cancel$1(FutureWithTimeout.scala:37)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.utils.FutureWithTimeout$$anon$1.cancel(FutureWithTimeout.scala:37)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.utils.RequestRegistry.cancel(RequestRegistry.scala:99)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:456)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:180)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:172)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+	at java.base/sun.nio.ch.SocketChannelImpl.tryWrite(SocketChannelImpl.java:1371)
+	at java.base/sun.nio.ch.SocketChannelImpl.blockingWriteFully(SocketChannelImpl.java:1405)
+	at java.base/sun.nio.ch.SocketOutputStream.write(SocketOutputStream.java:58)
+	at java.base/sun.nio.ch.SocketOutputStream.write(SocketOutputStream.java:53)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:139)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 20 more
+
+Apr 22, 2025 10:37:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+WARNING: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Broken pipe
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:135)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.sendCancelNotification(RemoteEndpoint.java:191)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:160)
+	at scala.meta.internal.metals.utils.FutureWithTimeout$$anon$1.$anonfun$cancel$1(FutureWithTimeout.scala:37)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.utils.FutureWithTimeout$$anon$1.cancel(FutureWithTimeout.scala:37)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.utils.RequestRegistry.cancel(RequestRegistry.scala:99)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:456)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:180)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:172)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62)
+	at java.base/sun.nio.ch.SocketChannelImpl.tryWrite(SocketChannelImpl.java:1371)
+	at java.base/sun.nio.ch.SocketChannelImpl.blockingWriteFully(SocketChannelImpl.java:1405)
+	at java.base/sun.nio.ch.SocketOutputStream.write(SocketOutputStream.java:58)
+	at java.base/sun.nio.ch.SocketOutputStream.write(SocketOutputStream.java:53)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:139)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:110)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 20 more
+
+java.util.concurrent.RejectedExecutionException: Task Future(<not completed>) rejected from java.util.concurrent.ThreadPoolExecutor@6a2bcfcb[Shutting down, pool size = 5, active threads = 5, queued tasks = 0, completed tasks = 73975]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl.execute(ExecutionContextImpl.scala:21)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.handleFailure(Promise.scala:444)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:435)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:278)
+	at scala.concurrent.Promise.complete(Promise.scala:57)
+	at scala.concurrent.Promise.complete$(Promise.scala:56)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:104)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:100)
+	at scala.concurrent.java8.FuturesConvertersImpl$P.accept(FutureConvertersImpl.scala:97)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.cancel(CompletableFuture.java:2512)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint$1.cancel(RemoteEndpoint.java:161)
+	at scala.meta.internal.metals.utils.FutureWithTimeout$$anon$1.$anonfun$cancel$1(FutureWithTimeout.scala:37)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.scala:17)
+	at scala.util.Try$.apply(Try.scala:217)
+	at scala.meta.internal.metals.utils.FutureWithTimeout$$anon$1.cancel(FutureWithTimeout.scala:37)
+	at scala.meta.internal.metals.Cancelable$.$anonfun$cancelAll$1(Cancelable.scala:29)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at scala.meta.internal.metals.Cancelable$.cancelAll(Cancelable.scala:28)
+	at scala.meta.internal.metals.MutableCancelable.cancel(MutableCancelable.scala:25)
+	at scala.meta.internal.metals.utils.RequestRegistry.cancel(RequestRegistry.scala:99)
+	at scala.meta.internal.metals.BuildServerConnection.cancel(BuildServerConnection.scala:456)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:180)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:172)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+java.util.concurrent.RejectedExecutionException: Task Future(<not completed>) rejected from java.util.concurrent.ThreadPoolExecutor@6a2bcfcb[Shutting down, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 73978]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl.execute(ExecutionContextImpl.scala:21)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.handleFailure(Promise.scala:444)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:435)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:504)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025.04.22 22:37:06 INFO  Cancelling compilation on Bloop server[0m
+java.util.concurrent.RejectedExecutionException: Task Future(<not completed>) rejected from java.util.concurrent.ThreadPoolExecutor@6a2bcfcb[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 73979]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at scala.concurrent.impl.ExecutionContextImpl.execute(ExecutionContextImpl.scala:21)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete0(Promise.scala:285)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:347)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:492)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025.04.22 22:37:28 INFO  Started: Metals version 1.5.2 in folders '/home/adix99/fais_projects/e_biznes/project02/scala-play-crud' for client Visual Studio Code 1.99.2.[0m
+2025.04.22 22:37:31 INFO  no build target found for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/build.sbt. Using presentation compiler with project's scala-library version: 3.3.5[0m
+2025.04.22 22:37:32 INFO  Attempting to connect to the build server...[0m
+2025.04.22 22:37:32 INFO  Found a Bloop server running[0m
+2025.04.22 22:37:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 22:37:33 INFO  Attempting to connect to the build server...[0m
+2025.04.22 22:37:33 INFO  Found a Bloop server running[0m
+2025.04.22 22:37:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 22:37:32 INFO  time: Connected to build server in 1.22s[0m
+2025.04.22 22:37:32 INFO  Connected to Build server: Bloop v2.0.9[0m
+2025.04.22 22:37:33 INFO  time: Imported build in 0.5s[0m
+Apr 22, 2025 10:37:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8
+Apr 22, 2025 10:37:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+Apr 22, 2025 10:37:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+Apr 22, 2025 10:37:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Apr 22, 2025 10:37:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+2025.04.22 22:37:45 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2025.04.22 22:37:47 INFO  time: indexed workspace in 13s[0m
+2025.04.22 22:37:47 WARN  no build target for: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/plugins.sbt[0m
+2025.04.22 22:37:47 INFO  compiling root (17 scala sources and 1 java source)[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 22:38:05 WARN  javac exited with exit code 1[0m
+2025.04.22 22:38:05 INFO  time: compiled root in 17s[0m
+2025.04.22 22:38:05 WARN  no build target for: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/plugins.sbt[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 22:38:05 INFO  no build target found for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/plugins.sbt. Using presentation compiler with project's scala-library version: 3.6.4[0m

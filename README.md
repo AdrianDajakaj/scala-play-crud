@@ -12,6 +12,7 @@ The goal of this project is to demonstrate basic CRUD operations for products, c
 - ✅ Automatic stock management when adding/removing items from a cart
 - ✅ Basic data validation
 - ✅ Runs via Docker and can be exposed publicly using ngrok
+- ✅ CORS config for two hosts and for CRUD methods
 
 ## CRUD App Structure
 ```bash
