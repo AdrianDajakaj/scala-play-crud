@@ -1,7 +1,7 @@
 # Scala Play CRUD App
 
 This is a basic Scala 3 web application built using the [Play Framework](https://www.playframework.com/).  
-The purpose of this project is to implement simple CRUD functionality using in-memory data structures for products, categories, and shopping carts.
+The goal of this project is to demonstrate basic CRUD operations for products, categories, and shopping carts using in-memory data storage.
 
 ## Features
 
@@ -11,9 +11,14 @@ The purpose of this project is to implement simple CRUD functionality using in-m
 - ✅ In-memory storage for all entities
 - ✅ Automatic stock management when adding/removing items from a cart
 - ✅ Basic data validation
+- ✅ Runs via Docker and can be exposed publicly using ngrok
 
 ## CRUD App Structure
 ```bash
+.
+├── docker-compose.yml
+├── Dockerfile
+├── start.sh
 ├── app
 │   ├── controllers
 │   │   ├── ProductController.scala
@@ -30,6 +35,7 @@ The purpose of this project is to implement simple CRUD functionality using in-m
 │   │   └── CartRepository.scala
 ├── conf
 │   └── routes
+...
 ```
 
 ## CRUD App Description
@@ -63,6 +69,8 @@ When a product is added to or removed from a cart, the product's stock is automa
 - JDK 17+
 - Scala 3+
 - sbt
+- Docker
+- ngrok CLI
 
 ## How to Run
 
@@ -73,13 +81,38 @@ git clone https://github.com/AdrianDajakaj/scala-play-crud.git
 cd scala-play-crud
 ```
 
-2. **Run the application with sbt:**
+2. **Install ngrok CLI (if not already installed)**
+
+Follow instructions for your OS, then authenticate:
 
 ```bash
-sbt run
+ngrok config add-authtoken <YOUR_AUTHTOKEN>
+```
+You can get your authtoken from https://dashboard.ngrok.com/get-started/setup
+
+3. **Make the startup script executable:**  
+
+```bash
+chmod +x start.sh
+```
+4. **Run the app via Docker + ngrok:**
+
+```bash
+./start.sh
 ```
 
-3. **The application will be available at http://localhost:9000.**  
+This will:
+
+- Build and run the application in Docker on port 9000
+- Start ngrok and expose your app to the internet
+
+5. **Open the app in your browser:**
+Ngrok will print a forwarding URL like:
+```bash
+Forwarding https://f903-194-183-60-188.ngrok-free.app -> http://localhost:9000
+```
+Just open that URL to use your app!
+
 
 ## API Endpoints
 **Product**
