@@ -57,3 +57,218 @@ exception caught when loading class module-info: java.lang.AssertionError: asser
 exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
 Apr 22, 2025 10:17:09 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2025.04.22 11:44:03 INFO  compiling root (1 scala source)[0m
+2025.04.22 11:44:06 INFO  time: compiled root in 2.25s[0m
+2025.04.22 11:44:50 INFO  compiling root (1 scala source)[0m
+2025.04.22 11:44:50 INFO  time: compiled root in 0.54s[0m
+Apr 22, 2025 11:47:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 488
+Apr 22, 2025 11:48:06 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 583
+Apr 22, 2025 11:48:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 585
+Apr 22, 2025 11:48:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 724
+2025.04.22 11:48:48 INFO  compiling root (1 scala source)[0m
+Apr 22, 2025 11:48:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 801
+Apr 22, 2025 11:48:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 804
+Apr 22, 2025 11:48:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 809
+2025.04.22 11:48:49 INFO  time: compiled root in 1.24s[0m
+Apr 22, 2025 11:48:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 814
+2025.04.22 11:54:59 INFO  compiling root (1 scala source)[0m
+2025.04.22 11:55:00 INFO  time: compiled root in 1.44s[0m
+Apr 22, 2025 11:56:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1425
+Apr 22, 2025 11:56:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1428
+Apr 22, 2025 11:56:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1429
+Apr 22, 2025 11:57:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1521
+Apr 22, 2025 11:57:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1543
+Apr 22, 2025 11:59:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1725
+Apr 22, 2025 12:04:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2102
+Apr 22, 2025 12:06:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2377
+2025.04.22 12:06:32 INFO  compiling root (1 scala source)[0m
+2025.04.22 12:06:33 INFO  time: compiled root in 1.18s[0m
+Apr 22, 2025 12:45:12 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 12:54:32 INFO  compiling root (1 scala source)[0m
+2025.04.22 12:54:34 INFO  time: compiled root in 1.19s[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 12:55:27 INFO  compiling root (1 scala source)[0m
+2025.04.22 12:55:27 INFO  time: compiled root in 0.44s[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+Apr 22, 2025 12:55:30 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 12:56:27 INFO  compiling root (1 scala source)[0m
+2025.04.22 12:56:28 INFO  time: compiled root in 1.07s[0m
+2025.04.22 12:57:07 INFO  compiling root (3 scala sources)[0m
+2025.04.22 12:57:08 INFO  time: compiled root in 1.52s[0m
+Apr 22, 2025 12:57:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2766
+2025.04.22 12:57:43 INFO  compiling root (3 scala sources)[0m
+2025.04.22 12:57:43 INFO  time: compiled root in 0.62s[0m
+Apr 22, 2025 12:58:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2894
+Apr 22, 2025 12:58:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2897
+Apr 22, 2025 12:58:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3002
+Apr 22, 2025 1:02:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3173
+2025.04.22 13:25:03 INFO  compiling root (4 scala sources)[0m
+2025.04.22 13:25:07 INFO  time: compiled root in 3.91s[0m
+2025.04.22 13:35:56 INFO  compiling root (4 scala sources)[0m
+2025.04.22 13:35:58 INFO  time: compiled root in 2.67s[0m
+Apr 22, 2025 1:36:15 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 13:36:53 INFO  compiling root (4 scala sources)[0m
+2025.04.22 13:36:55 INFO  time: compiled root in 2.08s[0m
+2025.04.22 13:39:54 INFO  compiling root (1 scala source)[0m
+2025.04.22 13:39:55 INFO  time: compiled root in 1.12s[0m
+2025.04.22 13:43:46 INFO  compiling root (1 scala source)[0m
+2025.04.22 13:43:50 INFO  time: compiled root in 1.16s[0m
+2025.04.22 13:43:50 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:44:31 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+Apr 22, 2025 1:44:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5426
+2025.04.22 13:44:39 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:44:39 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+Apr 22, 2025 1:44:39 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 13:44:39 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:44:39 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+Apr 22, 2025 1:44:40 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 13:44:56 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:45:05 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:45:35 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:45:38 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:45:38 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:45:39 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:45:39 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:45:40 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:45:42 INFO  compiling root (1 scala source)[0m
+2025.04.22 13:45:43 INFO  time: compiled root in 1.35s[0m
+2025.04.22 13:45:43 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:27 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:34 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:34 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+Apr 22, 2025 1:46:34 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 13:46:35 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:36 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:36 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:36 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:36 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:36 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:36 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:36 INFO  compiling root (1 scala source)[0m
+2025.04.22 13:46:36 INFO  time: compiled root in 0.55s[0m
+2025.04.22 13:46:37 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+Apr 22, 2025 1:46:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5537
+2025.04.22 13:46:41 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:41 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:42 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:43 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:45 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:45 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:47 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:47 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:49 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:49 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:51 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:51 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:52 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:53 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:46:58 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:06 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:06 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:06 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:06 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+Apr 22, 2025 1:47:06 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+Apr 22, 2025 1:47:06 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 13:47:30 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:31 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:33 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:34 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:34 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:35 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:39 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 13:47:40 INFO  compiling root (1 scala source)[0m
+2025.04.22 13:47:41 INFO  time: compiled root in 1.04s[0m
+Apr 22, 2025 1:47:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5758
+2025.04.22 13:48:13 INFO  compiling root (1 scala source)[0m
+2025.04.22 13:48:13 INFO  time: compiled root in 0.62s[0m
+2025.04.22 13:49:12 INFO  compiling root (3 scala sources and 1 java source)[0m
+2025.04.22 13:49:17 WARN  javac exited with exit code 1[0m
+2025.04.22 13:49:17 INFO  time: compiled root in 2.91s[0m
+2025.04.22 13:49:17 INFO  compiling root (3 scala sources and 1 java source)[0m
+2025.04.22 13:49:21 WARN  javac exited with exit code 1[0m
+2025.04.22 13:49:21 INFO  time: compiled root in 3.23s[0m
+2025.04.22 14:06:12 INFO  compiling root (4 scala sources and 1 java source)[0m
+2025.04.22 14:06:16 WARN  javac exited with exit code 1[0m
+2025.04.22 14:06:16 INFO  time: compiled root in 4.57s[0m
+2025.04.22 14:08:11 INFO  compiling root (4 scala sources and 1 java source)[0m
+2025.04.22 14:08:16 WARN  javac exited with exit code 1[0m
+2025.04.22 14:08:16 INFO  time: compiled root in 4.89s[0m
+Apr 22, 2025 2:10:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6219
+2025.04.22 14:10:27 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:10:35 WARN  javac exited with exit code 1[0m
+2025.04.22 14:10:35 INFO  time: compiled root in 5.31s[0m
+2025.04.22 14:18:37 INFO  compiling root (10 scala sources and 1 java source)[0m
+Apr 22, 2025 2:18:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6454
+Apr 22, 2025 2:18:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6471
+2025.04.22 14:18:46 WARN  javac exited with exit code 1[0m
+2025.04.22 14:18:46 INFO  time: compiled root in 5.48s[0m
+2025.04.22 14:19:25 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:19:31 WARN  javac exited with exit code 1[0m
+2025.04.22 14:19:31 INFO  time: compiled root in 5.6s[0m
+Apr 22, 2025 2:19:59 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: java/time/Instant# (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_14-19-59-585.md)
+Apr 22, 2025 2:22:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6680
+Apr 22, 2025 2:27:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7133
+Apr 22, 2025 2:28:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7430
+2025.04.22 14:28:26 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:28:34 WARN  javac exited with exit code 1[0m
+2025.04.22 14:28:34 INFO  time: compiled root in 5.79s[0m
+2025.04.22 14:29:37 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:29:40 WARN  javac exited with exit code 1[0m
+2025.04.22 14:29:40 INFO  time: compiled root in 3.07s[0m
+2025.04.22 14:30:15 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:30:17 INFO  time: compiled root in 2.07s[0m
+2025.04.22 14:30:59 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:31:03 WARN  javac exited with exit code 1[0m
+2025.04.22 14:31:03 INFO  time: compiled root in 3.29s[0m
+2025.04.22 14:31:03 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:31:06 WARN  javac exited with exit code 1[0m
+2025.04.22 14:31:06 INFO  time: compiled root in 3.89s[0m
+2025.04.22 14:34:13 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:34:19 WARN  javac exited with exit code 1[0m
+2025.04.22 14:34:19 INFO  time: compiled root in 6.2s[0m
+2025.04.22 14:35:18 INFO  compiling root (10 scala sources and 1 java source)[0m
+2025.04.22 14:35:21 WARN  javac exited with exit code 1[0m
+2025.04.22 14:35:21 INFO  time: compiled root in 3.36s[0m
+2025.04.22 14:43:15 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/target/scala-3.6.4/routes/main/controllers/routes.java[0m
+Apr 22, 2025 2:43:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8012
