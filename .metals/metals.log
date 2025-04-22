@@ -55,3 +55,5 @@ INFO: Unsupported notification method: $/setTrace
 exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
 2025.04.22 09:51:00 INFO  time: compiled root in 8.29s[0m
 exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+Apr 22, 2025 10:17:09 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
