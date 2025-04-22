@@ -3,8 +3,10 @@ package repositories
 import models.Product
 import scala.collection.mutable.ListBuffer
 import java.time.Instant
+import javax.inject.{Inject, Singleton}
 
-class ProductRepository {
+@Singleton
+class ProductRepository @Inject() {
     private val products = ListBuffer.empty[Product]
     private var currentId: Long = 0
 
@@ -12,6 +14,15 @@ class ProductRepository {
         currentId += 1
         currentId
     }
+
+    def updateStock(productId: Long, newStock: Int): Unit = {
+        findById(productId).foreach { product =>
+            val updatedProduct = product.copy(stock = newStock)
+            products -= product
+            products += updatedProduct
+        }
+    }
+
 
     def all(): Seq[Product] = products.toList
 

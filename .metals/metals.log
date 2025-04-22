@@ -272,3 +272,232 @@ WARNING: Unmatched cancel notification for request id 7430
 2025.04.22 14:43:15 WARN  Could not load snapshot text for /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/target/scala-3.6.4/routes/main/controllers/routes.java[0m
 Apr 22, 2025 2:43:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 WARNING: Unmatched cancel notification for request id 8012
+2025.04.22 15:28:58 INFO  compiling root (11 scala sources and 1 java source)[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:29:05 WARN  javac exited with exit code 1[0m
+2025.04.22 15:29:05 INFO  time: compiled root in 7.08s[0m
+2025.04.22 15:29:09 INFO  compiling root (11 scala sources and 1 java source)[0m
+2025.04.22 15:29:11 WARN  javac exited with exit code 1[0m
+2025.04.22 15:29:11 INFO  time: compiled root in 2.05s[0m
+2025.04.22 15:29:24 INFO  compiling root (12 scala sources and 1 java source)[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:29:26 WARN  javac exited with exit code 1[0m
+2025.04.22 15:29:26 INFO  time: compiled root in 2.01s[0m
+2025.04.22 15:29:34 INFO  compiling root (12 scala sources and 1 java source)[0m
+2025.04.22 15:29:35 WARN  javac exited with exit code 1[0m
+2025.04.22 15:29:35 INFO  time: compiled root in 1.87s[0m
+2025.04.22 15:30:07 INFO  compiling root (13 scala sources and 1 java source)[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:30:09 WARN  javac exited with exit code 1[0m
+2025.04.22 15:30:09 INFO  time: compiled root in 1.57s[0m
+2025.04.22 15:30:23 INFO  compiling root (14 scala sources and 1 java source)[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:30:24 WARN  javac exited with exit code 1[0m
+2025.04.22 15:30:24 INFO  time: compiled root in 1.56s[0m
+2025.04.22 15:31:03 INFO  compiling root (15 scala sources and 1 java source)[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:31:05 WARN  javac exited with exit code 1[0m
+2025.04.22 15:31:05 INFO  time: compiled root in 2.12s[0m
+2025.04.22 15:31:17 INFO  compiling root (16 scala sources and 1 java source)[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:31:18 WARN  javac exited with exit code 1[0m
+2025.04.22 15:31:18 INFO  time: compiled root in 1.49s[0m
+2025.04.22 15:47:40 INFO  compiling root (16 scala sources and 1 java source)[0m
+2025.04.22 15:47:50 WARN  javac exited with exit code 1[0m
+2025.04.22 15:47:50 INFO  time: compiled root in 5.45s[0m
+2025.04.22 15:48:32 INFO  compiling root (17 scala sources and 1 java source)[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:48:34 WARN  javac exited with exit code 1[0m
+2025.04.22 15:48:34 INFO  time: compiled root in 2.79s[0m
+2025.04.22 15:49:03 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 15:49:03 INFO  time: compiled root in 0.71s[0m
+2025.04.22 15:49:15 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 15:49:18 WARN  javac exited with exit code 1[0m
+2025.04.22 15:49:18 INFO  time: compiled root in 3.57s[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:51:29 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 15:51:37 WARN  javac exited with exit code 1[0m
+2025.04.22 15:51:37 INFO  time: compiled root in 4.84s[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:52:47 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 15:52:52 WARN  javac exited with exit code 1[0m
+2025.04.22 15:52:52 INFO  time: compiled root in 5.05s[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:55:34 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 15:55:40 WARN  javac exited with exit code 1[0m
+2025.04.22 15:55:40 INFO  time: compiled root in 5.75s[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 15:56:03 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 15:56:05 WARN  javac exited with exit code 1[0m
+2025.04.22 15:56:05 INFO  time: compiled root in 2.1s[0m
+2025.04.22 15:57:37 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 15:57:46 WARN  javac exited with exit code 1[0m
+2025.04.22 15:57:46 INFO  time: compiled root in 5.85s[0m
+2025.04.22 15:57:53 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 15:57:56 WARN  javac exited with exit code 1[0m
+2025.04.22 15:57:56 INFO  time: compiled root in 2.9s[0m
+2025.04.22 16:04:30 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:04:50 INFO  Started: Metals version 1.5.2 in folders '/home/adix99/fais_projects/e_biznes/project02/scala-play-crud' for client Visual Studio Code 1.99.2.[0m
+2025.04.22 16:04:55 INFO  Attempting to connect to the build server...[0m
+2025.04.22 16:04:55 INFO  Found a Bloop server running[0m
+2025.04.22 16:04:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:04:55 INFO  Attempting to connect to the build server...[0m
+2025.04.22 16:04:55 INFO  Found a Bloop server running[0m
+2025.04.22 16:04:55 INFO  Attempting to connect to the build server...[0m
+2025.04.22 16:04:55 INFO  Found a Bloop server running[0m
+2025.04.22 16:04:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/project/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:04:55 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:04:55 INFO  time: Connected to build server in 0.55s[0m
+2025.04.22 16:04:55 INFO  Connected to Build server: Bloop v2.0.9[0m
+2025.04.22 16:04:55 INFO  time: Imported build in 0.18s[0m
+2025.04.22 16:05:04 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2025.04.22 16:05:06 INFO  time: indexed workspace in 10s[0m
+2025.04.22 16:05:07 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:05:24 INFO  Started: Metals version 1.5.2 in folders '/home/adix99/fais_projects/e_biznes/project02/scala-play-crud' for client Visual Studio Code 1.99.2.[0m
+2025.04.22 16:05:28 INFO  Attempting to connect to the build server...[0m
+2025.04.22 16:05:28 INFO  Found a Bloop server running[0m
+2025.04.22 16:05:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:05:29 INFO  Attempting to connect to the build server...[0m
+2025.04.22 16:05:29 INFO  Found a Bloop server running[0m
+2025.04.22 16:05:29 INFO  Attempting to connect to the build server...[0m
+2025.04.22 16:05:29 INFO  Found a Bloop server running[0m
+2025.04.22 16:05:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/project/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:05:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:05:29 INFO  time: Connected to build server in 0.33s[0m
+2025.04.22 16:05:29 INFO  Connected to Build server: Bloop v2.0.9[0m
+2025.04.22 16:05:52 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2025.04.22 16:05:57 INFO  time: indexed workspace in 24s[0m
+2025.04.22 16:05:57 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:06:08 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.[0m
+2025.04.22 16:06:08 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.[0m
+2025.04.22 16:06:08 ERROR Bloop 'bsp' command exited with code 1. Something may be wrong with the current configuration.
+Running the [1mclean[0m sub-command to clear the working directory and remove caches might help.
+If the error persists, please report the issue as a bug and attach a log with increased verbosity by passing [1m-v -v -v[0m.[0m
+2025.04.22 16:06:08 INFO  No running Bloop server found, starting one.[0m
+2025.04.22 16:06:08 INFO  No running Bloop server found, starting one.[0m
+2025.04.22 16:06:08 INFO  No running Bloop server found, starting one.[0m
+2025.04.22 16:06:10 INFO  Starting compilation server[0m
+2025.04.22 16:06:10 INFO  Starting compilation server[0m
+2025.04.22 16:06:10 INFO  Starting compilation server[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 16:06:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:06:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/project/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:06:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/project/.metals/bsp.trace.json or /home/adix99/.cache/metals/bsp.trace.json[0m
+2025.04.22 16:06:12 INFO  Connected to Build server: Bloop v2.0.9[0m
+2025.04.22 16:06:12 INFO  time: Imported build in 0.13s[0m
+2025.04.22 16:06:14 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2025.04.22 16:06:14 INFO  time: indexed workspace in 2.48s[0m
+exception caught when loading class module-info: java.lang.AssertionError: assertion failed: attempt to parse java.lang.Object from classfile
+2025.04.22 16:10:58 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:11:08 WARN  javac exited with exit code 1[0m
+2025.04.22 16:11:08 INFO  time: compiled root in 10s[0m
+2025.04.22 16:11:40 WARN  Could not find 'CartRepository' using presentation compiler nor semanticdb. Trying to guess the definition using available information from local class context. [0m
+Apr 22, 2025 4:11:40 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 16:11:40 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:11:42 INFO  time: compiled root in 2s[0m
+2025.04.22 16:12:06 INFO  compiling root (17 scala sources and 1 java source)[0m
+Apr 22, 2025 4:12:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 347
+2025.04.22 16:12:10 WARN  javac exited with exit code 1[0m
+2025.04.22 16:12:10 INFO  time: compiled root in 4.15s[0m
+2025.04.22 16:12:19 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:12:21 WARN  javac exited with exit code 1[0m
+2025.04.22 16:12:21 INFO  time: compiled root in 2.35s[0m
+2025.04.22 16:13:13 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:13:16 INFO  time: compiled root in 2.88s[0m
+2025.04.22 16:13:20 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:13:25 WARN  javac exited with exit code 1[0m
+2025.04.22 16:13:25 INFO  time: compiled root in 5.06s[0m
+2025.04.22 16:14:23 WARN  Could not find semantic tokens for: file:///home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 16:14:24 WARN  Could not find semantic tokens for: file:///home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/ProductController.scala[0m
+2025.04.22 16:14:28 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:14:35 WARN  javac exited with exit code 1[0m
+2025.04.22 16:14:35 INFO  time: compiled root in 7.07s[0m
+2025.04.22 16:15:24 WARN  Could not find semantic tokens for: file:///home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/CartController.scala[0m
+2025.04.22 16:15:26 WARN  Could not find semantic tokens for: file:///home/adix99/fais_projects/e_biznes/project02/scala-play-crud/app/controllers/CartController.scala[0m
+2025.04.22 16:15:27 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:15:35 WARN  javac exited with exit code 1[0m
+2025.04.22 16:15:35 INFO  time: compiled root in 7.94s[0m
+2025.04.22 16:16:46 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:16:51 INFO  time: compiled root in 3.25s[0m
+2025.04.22 16:17:08 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:17:09 INFO  time: compiled root in 1.07s[0m
+2025.04.22 16:17:15 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:17:15 INFO  time: compiled root in 0.59s[0m
+2025.04.22 16:18:03 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:18:07 WARN  javac exited with exit code 1[0m
+2025.04.22 16:18:07 INFO  time: compiled root in 4.59s[0m
+2025.04.22 16:18:38 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:18:41 WARN  javac exited with exit code 1[0m
+2025.04.22 16:18:41 INFO  time: compiled root in 2.55s[0m
+2025.04.22 16:18:50 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:18:52 WARN  javac exited with exit code 1[0m
+2025.04.22 16:18:52 INFO  time: compiled root in 2.29s[0m
+Apr 22, 2025 4:28:05 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 16:29:13 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:29:22 WARN  javac exited with exit code 1[0m
+2025.04.22 16:29:22 INFO  time: compiled root in 8.8s[0m
+2025.04.22 16:29:22 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:29:26 WARN  javac exited with exit code 1[0m
+2025.04.22 16:29:26 INFO  time: compiled root in 3.33s[0m
+2025.04.22 16:29:40 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:29:42 WARN  javac exited with exit code 1[0m
+2025.04.22 16:29:42 INFO  time: compiled root in 2.65s[0m
+Apr 22, 2025 4:29:50 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 16:30:14 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:30:17 WARN  javac exited with exit code 1[0m
+2025.04.22 16:30:17 INFO  time: compiled root in 2.94s[0m
+Apr 22, 2025 4:47:25 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: /home/adix99/fais_projects/e_biznes/project02/scala-play-crud/.metals/.reports/metals-full/2025-04-22/r_empty-definition_(root)_12-45-12-952.md)
+2025.04.22 16:50:32 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 16:50:40 WARN  javac exited with exit code 1[0m
+2025.04.22 16:50:40 INFO  time: compiled root in 8.15s[0m
+2025.04.22 17:01:39 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:01:47 WARN  javac exited with exit code 1[0m
+2025.04.22 17:01:47 INFO  time: compiled root in 8.32s[0m
+2025.04.22 17:03:02 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:03:11 WARN  javac exited with exit code 1[0m
+2025.04.22 17:03:11 INFO  time: compiled root in 8.43s[0m
+2025.04.22 17:03:32 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:03:37 WARN  javac exited with exit code 1[0m
+2025.04.22 17:03:37 INFO  time: compiled root in 4.95s[0m
+2025.04.22 17:03:39 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:03:42 WARN  javac exited with exit code 1[0m
+2025.04.22 17:03:42 INFO  time: compiled root in 2.99s[0m
+2025.04.22 17:03:44 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:03:46 WARN  javac exited with exit code 1[0m
+2025.04.22 17:03:46 INFO  time: compiled root in 2.22s[0m
+2025.04.22 17:03:47 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:03:50 WARN  javac exited with exit code 1[0m
+2025.04.22 17:03:50 INFO  time: compiled root in 2.18s[0m
+2025.04.22 17:04:34 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:04:42 WARN  javac exited with exit code 1[0m
+2025.04.22 17:04:42 INFO  time: compiled root in 8.08s[0m
+2025.04.22 17:05:58 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:06:05 WARN  javac exited with exit code 1[0m
+2025.04.22 17:06:05 INFO  time: compiled root in 7.39s[0m
+2025.04.22 17:06:48 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:06:56 WARN  javac exited with exit code 1[0m
+2025.04.22 17:06:56 INFO  time: compiled root in 7.41s[0m
+2025.04.22 17:07:16 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:07:20 WARN  javac exited with exit code 1[0m
+2025.04.22 17:07:20 INFO  time: compiled root in 4.13s[0m
+2025.04.22 17:09:14 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:09:22 WARN  javac exited with exit code 1[0m
+2025.04.22 17:09:22 INFO  time: compiled root in 7.82s[0m
+2025.04.22 17:10:05 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:10:10 WARN  javac exited with exit code 1[0m
+2025.04.22 17:10:10 INFO  time: compiled root in 4.28s[0m
+2025.04.22 17:10:44 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:10:48 WARN  javac exited with exit code 1[0m
+2025.04.22 17:10:48 INFO  time: compiled root in 4.36s[0m
+2025.04.22 17:11:03 INFO  compiling root (17 scala sources and 1 java source)[0m
+2025.04.22 17:11:06 WARN  javac exited with exit code 1[0m
+2025.04.22 17:11:06 INFO  time: compiled root in 2.54s[0m

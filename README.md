@@ -1,36 +1,67 @@
 # Scala Play CRUD App
 
 This is a basic Scala 3 web application built using the [Play Framework](https://www.playframework.com/).  
-The purpose of this project is to implement simple CRUD functionality using in-memory data structures.
+The purpose of this project is to implement simple CRUD functionality using in-memory data structures for products, categories, and shopping carts.
 
 ## Features
 
 - ✅ Scala 3
 - ✅ Play Framework
-- ✅ CRUD operations (show all, show by id (GET), update (PUT), delete (DELETE), add (POST)) for Product
-- ✅ In-memory storage for products
+- ✅ CRUD operations (show all, show by id (GET), update (PUT), delete (DELETE), add (POST)) for: Product, Category and Cart.
+- ✅ In-memory storage for all entities
+- ✅ Automatic stock management when adding/removing items from a cart
+- ✅ Basic data validation
 
 ## CRUD App Structure
 ```bash
 ├── app
 │   ├── controllers
-│   │   └── ProductController.scala
+│   │   ├── ProductController.scala
+│   │   ├── CategoryController.scala
+│   │   └── CartController.scala
 │   ├── models
-│   │   └── Product.scala
+│   │   ├── Product.scala
+│   │   ├── Category.scala
+│   │   ├── Cart.scala
+│   │   └── CartItem.scala
 │   ├── repositories
-│   │   └── ProductRepository.scala
+│   │   ├── ProductRepository.scala
+│   │   ├── CategoryRepository.scala
+│   │   └── CartRepository.scala
+├── conf
+│   └── routes
 ```
 
 ## CRUD App Description
-- **Product.scala**: Defines the Product case class, which includes fields like id, name, categoryId, description, stock, price, currency, and timestamps for createdAt and updatedAt. Includes JSON formatters for Play Framework.
 
-- **ProductRepository.scala**: Provides in-memory storage for products, with methods to add, update, delete, and retrieve products by ID.
+**Product**
+- Product.scala: Defines the Product model with fields like id, name, categoryId, description, stock, price, currency, optional discount, and timestamps (createdAt, updatedAt). Includes custom JSON serialization for Instant.
 
-- **ProductController.scala**: Contains the routes for interacting with the Product entity, including endpoints to add, update, delete, and retrieve products. Includes validation for product data (e.g., checking if the price is valid, stock is non-negative).
+- ProductRepository.scala: In-memory storage and management of products, including automatic createdAt and updatedAt handling.
+
+- ProductController.scala: Exposes REST endpoints for managing products. Validates business rules like price > 0, stock ≥ 0, and non-empty fields.
+
+**Category**
+- Category.scala: Represents product categories with an id, name, and description.
+
+- CategoryRepository.scala: In-memory CRUD operations for categories.
+
+- CategoryController.scala: Provides endpoints for category management.
+
+**Cart**
+- Cart.scala & CartItem.scala: Define the structure of shopping carts and their line items.
+
+- CartRepository.scala: Handles adding, updating, and deleting carts. Automatically checks product availability and updates product stock accordingly.
+
+- CartController.scala: API endpoints to manage carts.
+
+ℹ️ Note:
+When a product is added to or removed from a cart, the product's stock is automatically updated in real time. This simulates realistic inventory handling.
 
 ## Requirements
 
 - JDK 17+
+- Scala 3+
 - sbt
 
 ## How to Run
@@ -39,6 +70,7 @@ The purpose of this project is to implement simple CRUD functionality using in-m
 
 ```bash
 git clone https://github.com/AdrianDajakaj/scala-play-crud.git  
+cd scala-play-crud
 ```
 
 2. **Run the application with sbt:**
@@ -50,42 +82,416 @@ sbt run
 3. **The application will be available at http://localhost:9000.**  
 
 ## API Endpoints
-- GET /products: Retrieves all products.
+**Product**
+- GET /products — Retrieve all products
 
-- GET /products/:id: Retrieves a product by its ID.
+- GET /products/:id — Retrieve product by ID
 
-- POST /products: Adds a new product (requires JSON payload).
+- POST /products — Add a new product
 
-- PUT /products/:id: Updates an existing product by its ID (requires JSON payload).
+- PUT /products/:id — Update a product
 
-- DELETE /products/:id: Deletes a product by its ID.  
+- DELETE /products/:id — Delete a product
 
-## Example of Adding a Product (POST)
-**Request Body:**
+**Category**
+- GET /categories — Retrieve all categories
 
-```json
-{
-  "name": "Product Name",
-  "categoryId": 1,
-  "description": "Product Description",
-  "stock": 10,
-  "price": 19.99,
-  "currency": "USD",
-  "discount": null
-}
+- GET /categories/:id — Retrieve category by ID
+
+- POST /categories — Add a new category
+
+- PUT /categories/:id — Update a category
+
+- DELETE /categories/:id — Delete a category
+
+**Cart**
+- GET /carts — Retrieve all carts
+
+- GET /carts/:id — Retrieve cart by ID
+
+- POST /carts — Create a new cart from a list of cart items
+
+- PUT /carts/:id — Update an existing cart
+
+- DELETE /carts/:id — Delete a cart and return its items to stock
+
+## Example of adding a Category (POST)
+**Request (POST /categories):**
+
+```bash
+curl -X POST http://localhost:9000/categories \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 0,
+  "name": "Komputery",
+  "description": "Sprzęt komputerowy"
+}'
+
+curl -X POST http://localhost:9000/categories \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 1,
+  "name": "Książki",
+  "description": "Książki papierowe"
+}'
+
+curl -X POST http://localhost:9000/categories \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 2,
+  "name": "AGD",
+  "description": "Sprzęt AGD"
+}'
 ```
 
+**Response**
+
 ```json
-{
+[
+  {
+    "id": 1,
+    "name": "Komputery",
+    "description": "Sprzęt komputerowy"
+  },
+  {
+    "id": 2,
+    "name": "Książki",
+    "description": "Książki papierowe"
+  },
+  {
+    "id": 3,
+    "name": "AGD",
+    "description": "Sprzęt AGD"
+  }
+]
+```
+
+## Example of updating a Category (PUT)
+**Request (PUT /categories/:id):**
+
+```bash
+curl -X PUT http://localhost:9000/categories/1 \
+-H "Content-Type: application/json" \
+-d '{
   "id": 1,
-  "name": "Product Name",
+  "name": "Komputery i RTV",
+  "description": "Sprzęt komputerowy oraz RTV"
+}'
+```
+
+**Response**
+
+```json
+[
+  {
+    "id": 2,
+    "name": "Książki",
+    "description": "Książki papierowe"
+  },
+  {
+    "id": 3,
+    "name": "AGD",
+    "description": "Sprzęt AGD"
+  },
+  {
+    "id": 1,
+    "name": "Komputery i RTV",
+    "description": "Sprzęt komputerowy oraz RTV"
+  }
+]
+```
+
+## Example of deleting a Category (DELETE)
+**Request (DELETE /categories/:id):**
+
+```bash
+curl -X DELETE http://localhost:9000/categories/3
+```
+**Response**
+
+```json
+[
+  {
+    "id": 2,
+    "name": "Książki",
+    "description": "Książki papierowe"
+  },
+  {
+    "id": 1,
+    "name": "Komputery i RTV",
+    "description": "Sprzęt komputerowy oraz RTV"
+  }
+]
+```
+
+## Example of adding a Product (POST)
+**Request (POST /products):**
+
+```bash
+curl -X POST http://localhost:9000/products \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 0,
+  "name": "Laptop Lenovo",
   "categoryId": 1,
-  "description": "Product Description",
+  "description": "Nowoczesny laptop",
   "stock": 10,
-  "price": 19.99,
-  "currency": "USD",
-  "discount": null,
-  "createdAt": "2025-04-22 14:30:00",
-  "updatedAt": "2025-04-22 14:30:00"
-}
+  "price": 2999.99,
+  "currency": "PLN",
+  "discount": 10
+}'
+
+curl -X POST http://localhost:9000/products \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 1,
+  "name": "Portret Doriana Graya",
+  "categoryId": 2,
+  "description": "Portret Doriana Graya - Oscar Wilde",
+  "stock": 99,
+  "price": 49.99,
+  "currency": "PLN",
+  "discount": 15
+}'
+
+curl -X POST http://localhost:9000/products \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 2,
+  "name": "Lodówka Samsung",
+  "categoryId": 3,
+  "description": "Lodówka Samsung - gwarancja 10 lat",
+  "stock": 20,
+  "price": 2449.99,
+  "currency": "PLN"
+}'
+```
+
+**Response**
+
+```json
+[
+  {
+    "stock": 10,
+    "categoryId": 1,
+    "description": "Nowoczesny laptop",
+    "price": 2999.99,
+    "id": 1,
+    "createdAt": "2025-04-22 18:51:58",
+    "currency": "PLN",
+    "discount": 10,
+    "name": "Laptop Lenovo",
+    "updatedAt": "2025-04-22 18:51:58"
+  },
+  {
+    "stock": 99,
+    "categoryId": 2,
+    "description": "Portret Doriana Graya - Oscar Wilde",
+    "price": 49.99,
+    "id": 2,
+    "createdAt": "2025-04-22 18:52:23",
+    "currency": "PLN",
+    "discount": 15,
+    "name": "Portret Doriana Graya",
+    "updatedAt": "2025-04-22 18:52:23"
+  },
+  {
+    "stock": 20,
+    "categoryId": 3,
+    "description": "Lodówka Samsung - gwarancja 10 lat",
+    "price": 2449.99,
+    "id": 3,
+    "createdAt": "2025-04-22 18:52:48",
+    "currency": "PLN",
+    "name": "Lodówka Samsung",
+    "updatedAt": "2025-04-22 18:52:48"
+  }
+]
+```
+
+## Example of updating a Product (PUT)
+**Request (PUT /products/:id):**
+
+```bash
+curl -X PUT http://localhost:9000/products/1 \
+-H "Content-Type: application/json" \
+-d '{
+  "id": 1,
+  "name": "Laptop Lenovo",
+  "categoryId": 1,
+  "description": "Zaktualizowany opis",
+  "stock": 10,
+  "price": 2999.99,
+  "currency": "PLN",
+  "discount": 30
+}'
+```
+
+**Response**
+
+```json
+[
+  {
+    "stock": 99,
+    "categoryId": 2,
+    "description": "Portret Doriana Graya - Oscar Wilde",
+    "price": 49.99,
+    "id": 2,
+    "createdAt": "2025-04-22 18:52:23",
+    "currency": "PLN",
+    "discount": 15,
+    "name": "Portret Doriana Graya",
+    "updatedAt": "2025-04-22 18:52:23"
+  },
+  {
+    "stock": 20,
+    "categoryId": 3,
+    "description": "Lodówka Samsung - gwarancja 10 lat",
+    "price": 2449.99,
+    "id": 3,
+    "createdAt": "2025-04-22 18:52:48",
+    "currency": "PLN",
+    "name": "Lodówka Samsung",
+    "updatedAt": "2025-04-22 18:52:48"
+  },
+  {
+    "stock": 10,
+    "categoryId": 1,
+    "description": "Zaktualizowany opis",
+    "price": 2999.99,
+    "id": 1,
+    "createdAt": "2025-04-22 18:51:58",
+    "currency": "PLN",
+    "discount": 30,
+    "name": "Laptop Lenovo",
+    "updatedAt": "2025-04-22 18:53:09"
+  }
+]
+```
+
+## Example of deleting a Category (DELETE)
+**Request (DELETE /products/:id):**
+
+```bash
+curl -X DELETE http://localhost:9000/products/3
+```
+**Response**
+
+```json
+
+[
+  {
+    "stock": 99,
+    "categoryId": 2,
+    "description": "Portret Doriana Graya - Oscar Wilde",
+    "price": 49.99,
+    "id": 2,
+    "createdAt": "2025-04-22 18:52:23",
+    "currency": "PLN",
+    "discount": 15,
+    "name": "Portret Doriana Graya",
+    "updatedAt": "2025-04-22 18:52:23"
+  },
+  {
+    "stock": 10,
+    "categoryId": 1,
+    "description": "Zaktualizowany opis",
+    "price": 2999.99,
+    "id": 1,
+    "createdAt": "2025-04-22 18:51:58",
+    "currency": "PLN",
+    "discount": 30,
+    "name": "Laptop Lenovo",
+    "updatedAt": "2025-04-22 18:53:09"
+  }
+]
+```
+
+
+## Example of adding to Cart (POST)
+**Request (POST /carts):**
+
+```bash
+curl -X POST http://localhost:9000/carts \
+-H "Content-Type: application/json" \
+-d '[
+  {
+    "productId": 1,
+    "quantity": 2
+  },
+  {
+    "productId": 2,
+    "quantity": 3
+  }
+]'
+```
+
+**Response**
+
+```json
+[
+  {
+    "id": 1,
+    "items": [
+      {
+        "productId": 1,
+        "quantity": 2
+      },
+      {
+        "productId": 2,
+        "quantity": 3
+      }
+    ],
+    "total": 4327.4605
+  }
+]
+```
+
+## Example of updating a Cart (PUT)
+**Request (PUT /carts/:id):**
+
+```bash
+curl -X PUT http://localhost:9000/carts/1 -H "Content-Type: application/json" -d '[ 
+  {
+    "productId": 1,
+    "quantity": 1
+  },
+  {
+    "productId": 2,
+    "quantity": 5
+  }
+]'
+```
+
+**Response**
+
+```json
+[
+  {
+    "id": 1,
+    "items": [
+      {
+        "productId": 1,
+        "quantity": 1
+      },
+      {
+        "productId": 2,
+        "quantity": 5
+      }
+    ],
+    "total": 2312.4505
+  }
+]
+```
+
+## Example of deleting from Cart (DELETE)
+**Request (DELETE /carts/:id):**
+
+```bash
+curl -X DELETE http://localhost:9000/carts/1
+```
+**Response**
+
+```json
+[]
 ```

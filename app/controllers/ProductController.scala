@@ -8,11 +8,11 @@ import scala.concurrent.ExecutionContext
 import models.Product
 import repositories.ProductRepository
 
-
 @Singleton
-class ProductController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
-
-    private val repo = new ProductRepository()
+class ProductController @Inject()(
+    val controllerComponents: ControllerComponents,
+    productRepo: ProductRepository
+) extends BaseController {
 
     def validateProduct(product: Product): Option[String] = {
         if (product.price <= 0) Some("Price must be greater than 0")
@@ -24,11 +24,11 @@ class ProductController @Inject()(val controllerComponents: ControllerComponents
     }
 
     def showAll = Action {
-        Ok(Json.toJson(repo.all()))
+        Ok(Json.toJson(productRepo.all()))
     }
 
     def showById(id: Long) = Action {
-        repo.findById(id) match {
+        productRepo.findById(id) match {
             case Some(product) => Ok(Json.toJson(product))
             case None => NotFound(Json.obj("error" -> "Product not found"))
         }
@@ -40,7 +40,7 @@ class ProductController @Inject()(val controllerComponents: ControllerComponents
             product => validateProduct(product) match {
                 case Some(error) => BadRequest(Json.obj("error" -> error))
                 case None =>
-                    val created = repo.add(product)
+                    val created = productRepo.add(product)
                     Created(Json.toJson(created))
             }
         )
@@ -52,7 +52,7 @@ class ProductController @Inject()(val controllerComponents: ControllerComponents
             product => validateProduct(product) match {
                 case Some(error) => BadRequest(Json.obj("error" -> error))
                 case None =>
-                    repo.update(id, product) match {
+                    productRepo.update(id, product) match {
                         case Some(updated) => Ok(Json.toJson(updated))
                         case None => NotFound(Json.obj("error" -> "Product not found"))
                     }
@@ -61,7 +61,8 @@ class ProductController @Inject()(val controllerComponents: ControllerComponents
     }   
 
     def delete(id: Long) = Action {
-        if (repo.delete(id)) NoContent
+        if (productRepo.delete(id)) NoContent
         else NotFound(Json.obj("error" -> "Product not found"))
     }
 }
+
